@@ -68,6 +68,11 @@ sources:
             description: the number of persons who saw the ad.
           - name: click 
             description: the number clicks made on the ad.
+        tests:
+          - unique:
+              column_name: "(date_date || paid_source || '-' || campaign_key)"           
+          - not_null:
+              column_name: "(date_date || paid_source || '-' || campaign_key)"
       - name: criteo
         identifier: raw_gz_criteo
         description: marketing campaigns via criteo for greenweez.
@@ -79,13 +84,18 @@ sources:
           - name: campaign_key
             description: the key of the campaign.
           - name: camPGN_name
-            description: name of the campaign.
+            description: name of the campaign.              
           - name: ads_cost
             description: cost of the campaign.
           - name: impression
             description: the number of persons who saw the ad.
           - name: click 
-            description: the number clicks made on the ad.            
+            description: the number clicks made on the ad.   
+        tests:
+          - unique:
+              column_name: "(date_date || paid_source || '-' || campaign_key)"           
+          - not_null:
+              column_name: "(date_date || paid_source || '-' || campaign_key)"                     
       - name: adwords
         identifier: raw_gz_adwords
         description: marketing campaigns via adwords for greenweez.
@@ -103,7 +113,12 @@ sources:
           - name: impression
             description: the number of persons who saw the ad.
           - name: click 
-            description: the number clicks made on the ad.           
+            description: the number clicks made on the ad.
+        tests:
+          - unique:
+              column_name: "(date_date || paid_source || '-' || campaign_key)"           
+          - not_null:
+              column_name: "(date_date || paid_source || '-' || campaign_key)"                             
       - name: bing
         identifier: raw_gz_bing
         description: marketing campaigns via bing for greenweez.
@@ -122,3 +137,8 @@ sources:
             description: the number of persons who saw the ad.
           - name: click 
             description: the number clicks made on the ad.
+        tests:
+          - unique:
+              column_name: "(date_date || paid_source || '-' || campaign_key)"           
+          - not_null:
+              column_name: "(date_date || paid_source || '-' || campaign_key)"          

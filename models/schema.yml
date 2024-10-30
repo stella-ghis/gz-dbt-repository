@@ -57,22 +57,68 @@ sources:
           - name: date_date
             description: the date of the campaign
           - name: paid_source
+            description: name of the paid source.
+          - name: campaign_key
+            description: the key of the campaign.
+          - name: camPGN_name
+            description: name of the campaign.
+          - name: ads_cost
+            description: cost of the campaign.
+          - name: impression
+            description: the number of persons who saw the ad.
+          - name: click 
+            description: the number clicks made on the ad.
       - name: criteo
         identifier: raw_gz_criteo
         description: marketing campaigns via criteo for greenweez.
         columns:
           - name: date_date
             description: the date.
+          - name: paid_source
+            description: name of the paid source.
+          - name: campaign_key
+            description: the key of the campaign.
+          - name: camPGN_name
+            description: name of the campaign.
+          - name: ads_cost
+            description: cost of the campaign.
+          - name: impression
+            description: the number of persons who saw the ad.
+          - name: click 
+            description: the number clicks made on the ad.            
       - name: adwords
         identifier: raw_gz_adwords
         description: marketing campaigns via adwords for greenweez.
         columns:
           - name: date_date
             description: the date.
+          - name: paid_source
+            description: name of the paid source.
+          - name: campaign_key
+            description: the key of the campaign.
+          - name: camPGN_name
+            description: name of the campaign.
+          - name: ads_cost
+            description: cost of the campaign.
+          - name: impression
+            description: the number of persons who saw the ad.
+          - name: click 
+            description: the number clicks made on the ad.           
       - name: bing
         identifier: raw_gz_bing
         description: marketing campaigns via bing for greenweez.
         columns:
           - name: date_date
             description: the date.
-
+          - name: paid_source
+            description: name of the paid source.
+          - name: campaign_key
+            description: the key of the campaign.
+          - name: camPGN_name
+            description: name of the campaign.
+          - name: ads_cost
+            description: cost of the campaign.
+          - name: impression
+            description: the number of persons who saw the ad.
+          - name: click 
+            description: the number clicks made on the ad.

@@ -1,5 +1,3 @@
-
-
 SELECT date_date, 
 COUNT (orders_id) AS nb_transactions,
 ROUND (SUM (total_revenue), 0) AS total_revenue,
@@ -11,3 +9,4 @@ ROUND (SUM (shipping_fee), 2) AS shipping_fees,
 ROUND (SUM (log_costs), 2) AS log_costs
 FROM {{ ref("int_orders_operational")}}
 GROUP BY date_date 
+ORDER BY date_date DESC
